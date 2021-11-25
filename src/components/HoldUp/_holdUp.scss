@@ -1,0 +1,55 @@
+.bg-holdup {
+    background-color: $sahara-sand;
+    height: 100vh;
+    position: relative;
+}
+
+.holdup {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-top: 5rem;
+}
+
+.text-holdup {
+    display: flex;
+    align-content: center;
+    width: 100%;
+}
+
+.postion-holdup {
+    margin: auto;
+    margin-right: 5rem;
+}
+
+.title-holdup {
+    color: #24673A;
+    font-size: 4em;
+    text-align: center;
+}
+
+.sub-holdup {
+    color: #24673A;
+    font-size: 1.5em;
+    text-align: center;
+
+}
+
+.image-holdup {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.spotlight {
+    width: $bold-weight;
+    height: 600px;
+}
+
+.been-image-bottom {
+    object-fit: cover;
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+}

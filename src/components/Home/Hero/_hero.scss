@@ -1,0 +1,88 @@
+.container-background {
+    background-color: $silver-tree;
+    height: calc(100vh - 76px);
+    position: relative;
+    z-index: 1;
+    padding-bottom: 15rem;
+    min-height: 100vh;
+    height: auto;
+}
+
+.people {
+    max-height: 50rem;
+    margin-top: 9rem;
+    position: absolute;
+    z-index: 4;
+}
+
+.margin {
+    margin: 0 !important;
+}
+
+.position {
+    margin: 6rem 8rem 0 0;
+}
+
+.title-hero {
+    color: $white;
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.subtitle-hero {
+    color: $white;
+    font-size: 1.2em;
+    text-align: center;
+    margin-right: 7rem;
+}
+
+.content {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.size {
+    width: 30rem;
+}
+
+.bean-group {
+    margin-right: 3rem;
+    width: 70px;
+    height: 70px;
+}
+
+.green-world {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.green-bush {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 4rem;
+    margin-left: 10rem;
+}
+
+.bush {
+    height: 300px;
+    position: absolute;
+    z-index: 2;
+}
+
+.grass-container {
+    object-fit: cover;
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+}
+
+.grass {
+    display: block;
+    width: 100%;
+    height: auto;
+}

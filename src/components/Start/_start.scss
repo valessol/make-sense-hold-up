@@ -1,0 +1,90 @@
+@mixin button ($bgcolor) {
+    background-color: $bgcolor;
+    //width: 25rem;
+    //height: 8rem;
+    //border-radius: 4rem;
+    font-size: 2em;
+    border-color: transparent;
+    padding-top: 0.8rem;
+
+    &:hover {
+        background-color: $bgcolor;
+        border-color: transparent;
+    }
+
+    &:focus {
+        background-color: $bgcolor;
+        border-color: transparent;
+    }
+}
+
+.bg-start {
+    background-color: #196C84;
+    height: 100vh;
+    padding-top: 5rem;
+    position: relative;
+}
+
+.title-start {
+    padding-top: 7rem;
+}
+
+.map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    background-color: white;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50%;
+    margin-left: 2rem;
+    overflow: hidden;
+}
+
+.image-map {
+    width: 22rem;
+    height: 22rem;
+}
+
+.start-content {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.btn-emprendedor {
+    @include button(#F3976B);
+    color: #0C3944;
+
+    &:hover {
+        color: #0C3944;
+    }
+}
+
+.btn-ciudadano {
+    @include button(#70AF90);
+}
+
+.btn-position {
+    display: flex;
+    justify-content: flex-end;
+    width: 40rem;
+    height: 12rem;
+    button {
+        border-radius: 8rem;
+        padding: 1rem;
+    }
+}
+
+.margin-btn {
+    margin-top: 5rem;
+}
+
+.been-image-top {
+    object-fit: cover;
+    position: absolute;
+    z-index: 3;
+    top: -8rem;
+    left: 0;
+    width: 100vw;
+}

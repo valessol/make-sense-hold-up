@@ -1,0 +1,80 @@
+main {
+    min-height: 100vh;
+}
+
+.challengeProfile {
+    .distance {
+        margin-top: 3rem;
+        padding: 1rem;
+    }
+    .screenType {
+        width: 30rem;
+        padding-top: 4rem;
+        place-self: flex-end;
+        @include mobile {
+            width: 40rem;
+        }
+        @include tablet {
+            width: 100%;
+        }
+    }
+    .button {
+        @include mobile {
+            margin: 0;
+        }
+    }
+    .mobile {
+        width: 90%;
+    }
+    h2, h3, p {
+        text-align: center;
+        @include mobile {
+            text-align: left;
+        }
+    }
+    .responseCounter {
+        width: 100%;
+        margin-top: 1rem;
+        text-align: left;
+        span {
+            margin-left: 0.5rem;
+        }
+    }
+    .gap {
+        padding: 2rem;
+    }
+}
+
+.challengeProfileImage {
+    position: absolute;
+    width: 30%;
+    bottom: 0;
+    left: -5rem;
+    //z-index: -1;
+    @include mobile {
+        width: 20%;
+        left: -5rem;
+    }
+    @include tablet {
+        left: -12rem;
+    }
+    @include laptop {
+        left: -16rem;
+    }
+}
+
+.profileLogo {
+    height: 16rem;
+    width: 36rem;
+    background-color: #fff;
+    border-radius: 8rem;
+    margin: 2rem auto;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include mobile {
+        
+    }
+    
+}

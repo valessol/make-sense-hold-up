@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;700;900&display=swap');
+
+//Variables
+$primary-font: 'Raleway', 'Century Gothic', sans-serif;
+$black-weight: 900;
+$bold-weight: 700;
+$medium-weight: 500;
+
+//--- Colores
+$flame-pea: #f3976B;
+$silver-tree: #70af90;
+$blue-dianne: #0c3944;
+$calypso:#196c84;
+$sahara-sand: #fcf6a0;
+$white: #fff;
+
+//Mixins
+
+@mixin mobile {
+    @media (min-width: 480px) {
+        @content;
+    }
+}
+@mixin tablet {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+@mixin laptop {
+    @media (min-width: 1024px) {
+        @content;
+    }
+}
+@mixin desktop {
+    @media (min-width: 1440px) {
+        @content;
+    }
+}
+
+//Generales
+
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: $primary-font;
+    min-height: 100vh;
+    padding-top: 8rem;
+}
+a {
+    text-decoration: none;
+}
+
+//Utilidades
+
+.flamePea {
+    background-color: $flame-pea;
+}
+.silverTree {
+    background-color: $silver-tree;
+}
+.blueDianne {
+    background-color: $blue-dianne;
+}
+.calypso {
+    background-color: $calypso;
+}
+.saharaSand {
+   background-color: $sahara-sand;
+}
+.mg-2 {
+    margin: 2rem auto;
+}
+.bold {
+    font-weight: $bold-weight !important;
+}
+.whiteText {
+    color: #fff;
+}
+.saharaSandText {
+    color: $sahara-sand;
+}
+.calypsoText {
+    color: $calypso;
+}
+.blueDianneText {
+    color: $blue-dianne;
+}
+.flamePeaText {
+    color: $flame-pea;
+}
+
+//Globales
+.title {
+    font-weight: $black-weight;
+    font-size: 2.4rem;
+}
+.subtitle {
+    font-weight: $bold-weight;
+    font-size: 1.7rem;
+}
+.bodyText {
+    font-weight: $medium-weight;
+    font-size: 1.4rem;
+    line-height: 2rem;
+}   
+.bodyText--small {
+    font-weight: $bold-weight;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+}
+@include mobile{
+
+    .title {
+        font-weight: $bold-weight;
+        font-size: 6rem;
+        line-height: 7rem;
+    }
+    .subtitle {
+        font-weight: $bold-weight;
+        font-size: 3.6rem;
+        line-height: 4rem;
+    }
+    .bodyText {
+        font-weight: $medium-weight;
+        font-size: 2.4rem;
+        line-height: 3rem;
+    }          
+    .bodyText--small {
+        
+        font-size: 1.7rem;
+        line-height: 2rem;
+    }          
+}
+.displayFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &--row {
+        flex-direction: row;
+    }
+    &--column {
+        flex-direction: column;
+    }
+}
+
+.makeSenseLogo {
+    width: 20rem;
+}
+.button {
+    font-weight: $bold-weight;
+    font-size: 1.6rem;
+    border-radius: 3rem;
+    border: none;
+    padding: 1rem 2rem;
+    margin: 2rem auto;
+    width: 90%;
+    display: block;
+    &:hover {
+        
+        opacity: 0.8;
+    }
+    @include mobile {
+        width: 20rem;
+    }
+}
+
+
+
+//Estilos por componentes
+
+@import './components/Challenge/ChallengeDetail/challenge';
+@import './components/Challenge/ChallengeProfile/challengeProfile.scss';
+@import './components/PopUp/popUp';
+@import './components/Forms/forms';
+@import './components/Entrepreneur/Welcome/welcome';
+@import './components/NavBar/navBar';
+@import './components/Home/Hero/hero';
+@import './components/HoldUp/holdUp';
+@import './components/Start/start';
+@import './components/Foro/foro';
+@import './components/Footer/footer';
+@import './components/LogIn/logIn';

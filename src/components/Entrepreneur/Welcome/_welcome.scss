@@ -1,0 +1,37 @@
+.welcome {
+    padding-top: 4rem;
+    min-height: 100vh;
+    // .welcomeSide {
+    //     display: none;
+    //     @include tablet {
+    //         display: flex;
+    //         flex-direction: column;
+    //         justify-content: flex-start;
+    //     }
+
+    // }
+    .image1 {
+        width: 30rem;
+        place-self: flex-end;
+        @include tablet {
+            width: 100%;
+        }
+    }
+    .welcomeButtons {
+        display: flex;
+        flex-direction: column;
+        height: 20rem;
+        justify-content: space-evenly;
+        @include laptop {
+            height: 30rem;
+        }
+    }
+}
+.buttonhover {
+    &:hover {
+        background-color: rgb(247, 150, 150);
+    }
+}
+.footImage {
+    width: 100%;
+}

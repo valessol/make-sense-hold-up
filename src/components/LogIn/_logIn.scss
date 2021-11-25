@@ -1,0 +1,194 @@
+.bg-login {
+    background-color: $sahara-sand;
+    height: 100vh;
+}
+
+.title-login {
+    color: $blue-dianne;
+    font-size: 1.5em;
+    font-weight: $bold-weight;
+    margin-top: 6rem;
+    margin-bottom: 3rem;
+}
+
+form {
+    margin-top: 3rem;
+}
+
+.mb-3 {
+    margin-bottom: 3rem !important;
+}
+
+.form-label {
+    color: $blue-dianne;
+    font-size: 1em;
+    font-weight: $bold-weight;
+}
+
+.form-check {
+    margin-top: 2rem;
+}
+
+.form-check-label {
+    color: $blue-dianne;
+    font-size: 1em;
+    font-weight: $bold-weight;
+    margin-top: 0.5rem;
+}
+
+.form-control {
+    border-radius: 3rem;
+    border: none;
+    width: 100%;
+    height: 3rem;
+    padding: 0 2rem;
+
+    &:focus {
+        box-shadow: none;
+    }
+
+}
+
+.form-check-input {
+    background-color: transparent;
+    border: 2px solid $blue-dianne;
+    width: 20px;
+    height: 20px;
+    margin-top: 0.5rem;
+    margin-right: 0.6rem;
+    box-shadow: none;
+
+    &:focus {
+        box-shadow: none;
+        border-color: $blue-dianne;
+    }
+
+    &:checked {
+        background-color: $blue-dianne;
+        border-color: $blue-dianne;
+        box-shadow: none;
+    }
+}
+
+.emprendedores {
+    margin-top: 5rem;
+    margin-left: 12rem;
+}
+
+.login-position {
+    margin-top: 5rem;
+    padding-left: 2rem;
+}
+
+.register-position {
+    margin-top: 8rem;
+}
+
+.image-login {
+    width: 300px;
+    height: 400px;
+}
+
+.login-container {
+    margin-top: 2rem;
+}
+
+.p-login {
+    color: $blue-dianne;
+    font-size: 1em;
+    font-weight: $bold-weight;
+}
+
+.a-login {
+    color: #9B084F;
+    font-size: 1em;
+    font-weight: $bold-weight;
+    text-decoration: none;
+    margin-left: 0.5rem;
+
+    &:hover {
+        color: #9B084F;
+    }
+}
+
+.sub-login {
+    color: $blue-dianne;
+    font-size: 1.5em;
+    font-weight: $bold-weight;
+    text-align: left;
+    width: 30rem;
+    margin: auto;
+}
+
+.ol-login {
+    padding-top: 2rem;
+    width: 30rem;
+    margin: auto;
+}
+
+.li-login {
+    color: $blue-dianne;
+    font-size: 1em;
+    font-weight: $bold-weight;
+}
+
+.btn-ingreso {
+    background-color: $blue-dianne;
+    color: #FCF6A0;
+    width: 12rem;
+    height: 3.5rem;
+    border-radius: 2rem;
+    font-size: 1em;
+    font-weight: $bold-weight;
+    border-color: transparent;
+
+    &:hover {
+        background-color: $blue-dianne;
+        color: #FCF6A0;
+        border-color: transparent;
+    }
+
+    &:focus {
+        background-color: $blue-dianne;
+        box-shadow: none;
+        color: #FCF6A0;
+        border-color: transparent;
+    }
+}
+
+.position-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-google {
+    background-color: $white;
+    color: #4285f4;
+    font-weight: $bold-weight;
+    border: 3px solid #4285f4;
+    width: 100%;
+    height: 4rem;
+    font-size: 1em;
+    font-weight: $bold-weight;
+    border-radius: 2rem;
+
+    &:hover {
+        background-color: $white;
+        color: #4285f4;
+        border: 3px solid #4285f4;
+    }
+
+    &:focus {
+        background-color: $white;
+        color: #4285f4;
+        box-shadow: none;
+        border: 3px solid #4285f4;
+    }
+}
+
+.google {
+    width: 25px;
+    height: 25px;
+    margin-right: 1rem;
+    margin-top: -0.3rem;
+}

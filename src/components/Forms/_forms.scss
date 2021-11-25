@@ -1,0 +1,88 @@
+.registrationForms {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    
+    .formsText {
+        margin: 2rem 0;
+    }
+    .formsImages {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: inherit;
+        .image1 {
+            width: 30rem;
+            place-self: flex-end;
+            @include tablet {
+                width: 100%;
+            }
+        }
+        .image2, .image3 {
+            display: none;
+            @include tablet {
+                display: block;
+            }
+        }
+        .image3 {
+            @include tablet {
+                text-align: right;
+                width: 100%;
+            }
+        }
+        
+    }
+    
+    .label {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+    .radio {
+        margin-right: 1.4rem;
+    }
+    .input {
+        border: none;
+        border-radius: 2rem;
+        font-size: 1.7rem;
+    }
+}
+
+.tabletAlign {
+    padding-top: 9rem;
+    @include tablet {
+        padding-top: inherit;
+    }
+}
+
+.entrepreneurForm {
+    .button {
+        margin: 4rem auto;
+        &:hover{
+            background-color: $flame-pea;
+        }
+    }
+}
+.challengeForm {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    .input {
+        border: 0.5px solid $calypso;
+    }
+    .image4 {
+        width: 100%;
+    }
+    .subtitle {
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+    .button {
+        margin: 4rem auto;
+    }
+}
+.citizenForm {
+    .input {
+        border: 0.5px solid $calypso;
+    }
+}
+
+
+

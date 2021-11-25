@@ -1,0 +1,50 @@
+.nav {
+    background-color: $silver-tree;
+}
+
+.container-fluid {
+    margin: 0 3rem 0 3rem;
+}
+
+.nav-link {
+    color: $white !important;
+    font-size: 1.2em;
+    font-weight: $bold-weight;
+    letter-spacing: 0.5px;
+    margin: 0 1.6rem;
+    padding: 1rem;
+}
+
+.btn-nav {
+    background-color: $flame-pea;
+    border-color: transparent;
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+    font-weight: $bold-weight;
+    box-shadow: none;
+
+    &:hover {
+        background-color: $flame-pea;
+        border-color: transparent;
+        box-shadow: none;
+    }
+
+    &:focus {
+        background-color: $flame-pea;
+        border-color: transparent;
+        box-shadow: none;
+    }
+}
+
+.navBarLogo {
+    width: 25rem;
+    @include mobile {
+
+        width: 30rem;
+    }
+}
+.navBarLink {
+    padding-right: 2rem;
+    padding-top: 1rem;
+    margin-top: 2rem;
+}
